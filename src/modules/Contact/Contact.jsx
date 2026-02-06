@@ -202,7 +202,7 @@ export default function ContactPage() {
                       htmlFor="name"
                       className="block text-sm font-medium text-gray-700 mb-2"
                     >
-                      Your Name *
+                      Your Name <span className="text-red-600">*</span>
                     </label>
                     <input
                       type="text"
@@ -213,7 +213,7 @@ export default function ContactPage() {
                       className={`w-full px-4 py-3 rounded-lg border ${
                         errors.name ? "border-red-500" : "border-gray-300"
                       } focus:ring-2 focus:ring-[#005369] focus:border-transparent outline-none transition-all text-black`}
-                      placeholder="John Doe"
+                      placeholder="Evora"
                     />
                     {errors.name && (
                       <p className="mt-1 text-sm text-red-600">{errors.name}</p>
@@ -225,7 +225,7 @@ export default function ContactPage() {
                       htmlFor="email"
                       className="block text-sm font-medium text-gray-700 mb-2"
                     >
-                      Email Address *
+                      Email Address <span className="text-red-600">*</span>
                     </label>
                     <input
                       type="email"
@@ -236,7 +236,7 @@ export default function ContactPage() {
                       className={`w-full px-4 py-3 rounded-lg border ${
                         errors.email ? "border-red-500" : "border-gray-300"
                       } focus:ring-2 focus:ring-[#005369] focus:border-transparent outline-none transition-all text-black`}
-                      placeholder="john@example.com"
+                      placeholder="evora@example.com"
                     />
                     {errors.email && (
                       <p className="mt-1 text-sm text-red-600">
@@ -250,7 +250,7 @@ export default function ContactPage() {
                       htmlFor="phone"
                       className="block text-sm font-medium text-gray-700 mb-2"
                     >
-                      Phone Number
+                      Phone Number <span className="text-red-600">*</span>
                     </label>
                     <input
                       type="tel"
@@ -275,7 +275,7 @@ export default function ContactPage() {
                       htmlFor="subject"
                       className="block text-sm font-medium text-gray-700 mb-2"
                     >
-                      Subject *
+                      Subject <span className="text-red-600">*</span>
                     </label>
                     <input
                       type="text"
@@ -300,7 +300,7 @@ export default function ContactPage() {
                       htmlFor="message"
                       className="block text-sm font-medium text-gray-700 mb-2"
                     >
-                      Message *
+                      Message <span className="text-red-600">*</span>
                     </label>
                     <textarea
                       id="message"
