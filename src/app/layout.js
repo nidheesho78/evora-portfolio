@@ -1,5 +1,4 @@
 
-// Because <Toaster /> is a client component (uses portals + React DOM)
 
 import localFont from "next/font/local";
 import "./globals.css";

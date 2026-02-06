@@ -10,8 +10,7 @@ export default function PageBanner({ title, subtitle, image }) {
         backgroundPosition: 'center',
       }}
     >
-       {/* Semi-transparent blue overlay */}
-          {/* <div className="absolute inset-0 bg-[#005369] opacity-50" /> */}
+      
           
           {/* Dark gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50" />
