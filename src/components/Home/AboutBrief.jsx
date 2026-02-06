@@ -202,7 +202,7 @@ const AboutSection = () => {
             <div className="relative h-[500px] md:h-[550px] lg:h-[650px] border-2 rounded-2xl overflow-hidden">
               {/* Background Image */}
               <Image
-                src="/images/about-section.jpg"
+                src="/images/about-section.png"
                 alt="Modern interior design"
                 fill
                 className="object-cover"

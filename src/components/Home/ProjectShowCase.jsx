@@ -90,21 +90,20 @@ import { ArrowRight } from "lucide-react";
 
 const featuredProjects = [
   {
-    title: "Luxury Residential Villa",
+    title: "Life Spring Pharmacy",
+    category: "Commercial",
+    image:"/images/recent/life-spring.png",
+  },
+  {
+    title: "Premium Hotel",
     category: "Residential",
     image:
-      "https://images.pexels.com/photos/31817157/pexels-photo-31817157.jpeg",
+    "/images/recent/recent-two.png",
   },
   {
-    title: "Modern Office Space",
+    title: "Grand Dine Restaurant",
     category: "Commercial",
-    image: "https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg", // bright modern open-plan office (very popular & clean)
-  },
-  {
-    title: "Premium Hotel Lobby",
-    category: "Hospitality",
-    image:
-      "https://images.pexels.com/photos/29649745/pexels-photo-29649745.jpeg",
+    image: "/images/recent/grand-dine.png", // bright modern open-plan office (very popular & clean)
   },
 ];
 

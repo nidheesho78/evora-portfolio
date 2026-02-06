@@ -113,20 +113,16 @@ import AnimatedSection from "@/utils/Animations";
 
 const testimonials = [
   {
-    name: "Paul Trueman",
+    name: "Preji Prabhakaran",
     role: "Designer",
-    text: "In my opinion, it was an unforgettable experience working on my ideas. They understood everything I wanted in my project and idea that was great. I would work with Evora Future again for future projects.",
+    text: "We recently had our office interiors done by Evora Future and are extremely satisfied. The team was professional, creative, and detail-oriented. They transformed our workspace into a modern, functional, and elegant environment that perfectly matches our needs. Everything from design to execution was smooth and on time. Highly recommend Evora Future for top-notch interior design services."
   },
   {
-    name: "Ahmed Al Mansouri",
-    role: "Property Developer",
-    text: "Exceptional attention to detail and professional execution. The team delivered our luxury villa project on time and exceeded all expectations. Highly recommended!",
+    name: "Rashid",
+    role: "Grand Dine Restaurant ",
+    text: "Evora Future delivered our restaurant interior fit-out with exceptional quality and professionalism. The team maintained clear communication, met timelines, and executed every detail to a high standard. We are extremely satisfied with the final outcome and would confidently recommend them.",
   },
-  {
-    name: "Sarah Johnson",
-    role: "Business Owner",
-    text: "Professional, creative, and always on time. Their vision transformed our commercial space into something truly remarkable. Outstanding service from start to finish.",
-  },
+ 
 ];
 
 export default function Testimonials() {
@@ -174,8 +170,10 @@ export default function Testimonials() {
         </AnimatedSection>
 
         {/* Testimonial Carousel */}
+        {/* Testimonial Carousel */}
         <div className="relative mt-8 sm:mt-12">
-          <div className="relative min-h-[340px] sm:min-h-[320px] lg:min-h-[300px]">
+          {/* Sliding testimonials container – fixed/controlled height */}
+          <div className="relative min-h-[340px] sm:min-h-[380px] lg:min-h-[420px] xl:min-h-[380px]">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
@@ -183,21 +181,21 @@ export default function Testimonials() {
                   index === current
                     ? "opacity-100 translate-x-0"
                     : index < current
-                      ? "opacity-0 -translate-x-8"
-                      : "opacity-0 translate-x-8"
+                      ? "opacity-0 -translate-x-full"
+                      : "opacity-0 translate-x-full"
                 }`}
               >
-                <div className="bg-[#005369] rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 xl:p-12 shadow-2xl border border-[#c2b790]/15">
+                <div className="bg-[#005369] rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 xl:p-12 shadow-2xl border border-[#c2b790]/15 h-full flex flex-col">
                   <Quote
                     size={40}
-                    className="text-[#c2b790] mb-5 sm:mb-6 opacity-80"
+                    className="text-[#c2b790] mb-5 sm:mb-6 opacity-80 flex-shrink-0"
                   />
 
-                  <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-white leading-relaxed mb-8 sm:mb-10">
+                  <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-white leading-relaxed mb-8 flex-grow">
                     “{testimonial.text}”
                   </p>
 
-                  <div className="flex items-center gap-4 sm:gap-5">
+                  <div className="flex items-center gap-4 sm:gap-5 flex-shrink-0">
                     <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#c2b790] flex items-center justify-center text-[#005369] text-xl sm:text-2xl font-bold flex-shrink-0">
                       {testimonial.name.charAt(0)}
                     </div>
@@ -215,9 +213,9 @@ export default function Testimonials() {
             ))}
           </div>
 
-          {/* Navigation Controls */}
-          <div className="mt-5 sm:mt-14 lg:mt-20 flex flex-col items-center gap-6 sm:gap-8">
-            {/* Dots – always on top */}
+          {/* Navigation – now safely below the sliding area */}
+          <div className="mt-10 sm:mt-12 lg:mt-16 flex flex-col items-center gap-6 sm:gap-8">
+            {/* Dots */}
             <div className="flex items-center gap-3 sm:gap-4">
               {testimonials.map((_, i) => (
                 <button
@@ -233,17 +231,11 @@ export default function Testimonials() {
               ))}
             </div>
 
-            {/* Prev / Next buttons with text labels */}
+            {/* Prev / Next */}
             <div className="flex items-center justify-center gap-16 sm:gap-24 lg:gap-32">
               <button
                 onClick={goToPrev}
-                className="
-                  flex items-center gap-2 text-[#005369] 
-                  hover:text-[#c2b790] transition-colors
-                  text-sm sm:text-base font-medium
-                  
-                  active:scale-95
-                "
+                className="flex items-center gap-2 text-[#005369] hover:text-[#c2b790] transition-colors text-sm sm:text-base font-medium active:scale-95"
                 aria-label="Previous testimonial"
               >
                 <ChevronLeft size={20} strokeWidth={2.5} />
@@ -252,13 +244,7 @@ export default function Testimonials() {
 
               <button
                 onClick={goToNext}
-                className="
-                  flex items-center gap-2 text-[#005369] 
-                  hover:text-[#c2b790] transition-colors
-                  text-sm sm:text-base font-medium
-                  
-                  active:scale-95
-                "
+                className="flex items-center gap-2 text-[#005369] hover:text-[#c2b790] transition-colors text-sm sm:text-base font-medium active:scale-95"
                 aria-label="Next testimonial"
               >
                 Next

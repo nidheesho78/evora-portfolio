@@ -263,7 +263,7 @@ export default function Footer() {
                 />
               </a>
 
-              <a
+              {/* <a
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
@@ -273,7 +273,7 @@ export default function Footer() {
                   size={24}
                   className="text-[#27164a] hover:text-white transition-colors duration-300"
                 />
-              </a>
+              </a> */}
 
               <a
                 href="https://www.instagram.com/evora_future?igsh=MTBobjdmN25mZ2c2Yg=="
