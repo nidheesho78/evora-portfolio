@@ -56,10 +56,11 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://wa.me/00971542004993?text=Hi%20Nidheesh,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect"
+                href="https://wa.me/971542004993?text=Hello%20Niyasudheen,%20I'm%20interested%20in%20your%20interior%20fit-out%20and%20maintenance%20services%20for%20our%20project.%20Could%20we%20discuss%20further?"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white rounded-full p-2 hover:bg-[#25D366] transition-colors duration-300"
+                title="Chat with Niyasudheen (General Manager) on WhatsApp"
               >
                 <IoLogoWhatsapp
                   size={24}
