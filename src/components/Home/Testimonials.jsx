@@ -114,15 +114,22 @@ import AnimatedSection from "@/utils/Animations";
 const testimonials = [
   {
     name: "Preji Prabhakaran",
-    role: "Designer",
-    text: "We recently had our office interiors done by Evora Future and are extremely satisfied. The team was professional, creative, and detail-oriented. They transformed our workspace into a modern, functional, and elegant environment that perfectly matches our needs. Everything from design to execution was smooth and on time. Highly recommend Evora Future for top-notch interior design services."
+    role: "Mordern Workspace",
+    location: "Dubai, UAE",
+    text: "We recently had our office interiors done by Evora Future and are extremely satisfied. The team was professional, creative, and detail-oriented. They transformed our workspace into a modern, functional, and elegant environment that perfectly matches our needs. Everything from design to execution was smooth and on time. Highly recommend Evora Future for top-notch interior design services.",
   },
   {
     name: "Rashid",
-    role: "Grand Dine Restaurant ",
+    role: "Grand Dine Restaurant",
+    location: "Al Muteena, Deira, Dubai",
     text: "Evora Future delivered our restaurant interior fit-out with exceptional quality and professionalism. The team maintained clear communication, met timelines, and executed every detail to a high standard. We are extremely satisfied with the final outcome and would confidently recommend them.",
   },
- 
+  {
+    name: "Mr. Mark",
+    role: "Pai Burmese restaurant",
+    loaction: "Deira, Dubai",
+    text: "This team did the fit-out work for our restaurant and handled everything smoothly. The team was easy to work with and supportive throughout the project. They helped bring the Myanmar feel into the space with murals and a cozy, warm interior. We’re happy with how the restaurant turned out. Thanks to Evora Future.",
+  },
 ];
 
 export default function Testimonials() {
