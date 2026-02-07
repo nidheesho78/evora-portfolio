@@ -61,20 +61,7 @@ async function POST(req) {
       `,
     });
 
-    // // Send thank-you auto-reply to the user
-    // await transporter.sendMail({
-    //   from: `"Evora Future" <${process.env.ZOHO_EMAIL}>`,
-    //   to: email,
-    //   subject: "We received your message – Thank You!",
-    //   html: `
-    //     <p>Hi ${name},</p>
-    //     <p>Thank you for contacting <strong>Evora Future</strong>.</p>
-    //     <p>We’ve received your message and our team will get back to you shortly.</p>
-    //     <br/>
-    //     <p>Best regards,<br/>Evora Future Team</p>
-    //   `,
-    // });
-
+  
     // Send thank-you auto-reply to the user
     await transporter.sendMail({
       from: `"Evora Future" <${process.env.ZOHO_EMAIL}>`,
@@ -106,10 +93,10 @@ async function POST(req) {
     <body>
       <div class="container">
         <div class="header">
-  <div style="background-color: #ffffff; padding: 20px; border-radius: 8px; display: inline-block;">
-    <img src="cid:logo" alt="Evora Future Logo" style="max-width:180px; height:auto; display:block;" />
-  </div>
-</div>
+          <div style="background-color: #ffffff; padding: 20px; border-radius: 8px; display: inline-block;">
+            <img src="cid:logo" alt="Evora Future Logo" style="max-width:180px; height:auto; display:block;" />
+          </div>
+        </div>
         
         <div class="content">
           <p>Dear <strong>${name}</strong>,</p>
@@ -126,7 +113,7 @@ async function POST(req) {
             <div class="contact-info">
               <div><strong>Mobile:</strong> +971 54 200 4993</div>
               <div><strong>Email:</strong> <a href="mailto:niyas@evorafuture.com">niyas@evorafuture.com</a></div>
-              <!-- <div><strong>Website:</strong> <a href="https://www.evorafuture.com">www.evorafuture.com</a></div>  ← uncomment & update if you have a website -->
+              <!-- <div><strong>Website:</strong> <a href="https://www.evorafuture.com">www.evorafuture.com</a></div> -->
               <div>Dubai, United Arab Emirates</div>
             </div>
           </div>
@@ -142,9 +129,9 @@ async function POST(req) {
   `,
       attachments: [
         {
-          filename: "logo.png", // can be any name
-          path: path.join(process.cwd(), "public/logo.png"), // ← adjust path to your file
-          cid: "logo", // must match src="cid:logo"
+          filename: "logo.png",
+          path: "https://www.evorafuture.com/logo.png", // ← This is the key fix
+          cid: "logo", // Must match src="cid:logo" in HTML
         },
       ],
     });
