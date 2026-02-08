@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Toaster } from "react-hot-toast"; // ← Import here
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -95,6 +96,8 @@ export default function RootLayout({ children }) {
         />
 
         {children}
+        {/* ← Add Analytics component here (best place: inside <body>, after main content) */}
+        <Analytics />
         <Footer />
         <ScrollToTop />
       </body>
