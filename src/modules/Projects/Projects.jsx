@@ -80,7 +80,7 @@ const projects = [
   },
   {
     id: 5,
-    title: "Premium Hotel",
+    title: "Villa Project",
     category: "Residential",
     image: "/images/projects/residential/residential-one.png",
     gallery: [
@@ -89,7 +89,6 @@ const projects = [
       "/images/projects/residential/residential-three.png",
       "/images/projects/residential/residential-four.png",
       "/images/projects/residential/residential-five.png",
-      "/images/projects/residential/residential-six.png",
       "/images/projects/residential/residential-seven.png",
       "/images/projects/residential/residential-eight.png",
     ],
@@ -100,7 +99,7 @@ const projects = [
   },
   {
     id: 6,
-    title: "Contemporary Kitchen Design",
+    title: "Pool & Landscape",
     category: "Residential",
     image: "/images/projects/residential-project/residential-three.png",
     gallery: [
@@ -118,7 +117,7 @@ const projects = [
     id: 7,
     title: "Spectra International",
     category: "Commercial",
-    image: "/images/projects/spectra/spectra-four.png",
+    image: "/images/projects/spectra/spectra-five.png",
     gallery: [
       "/images/projects/spectra/spectra-four.png",
       "/images/projects/spectra/spectra-one.png",
