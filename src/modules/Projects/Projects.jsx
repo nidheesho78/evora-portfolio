@@ -149,26 +149,11 @@ const projects = [
     year: "2024",
     location: "Dubai, UAE",
   },
-  {
-    id: 9,
-    title: "Al Jasim Air Conditioning",
-    category: "Commercial",
-    image: "/images/projects/al-jasim-air-conditioning/commercial-three.png",
-    gallery: [
-      "/images/projects/al-jasim-air-conditioning/commercial-three.png",
-      "/images/projects/al-jasim-air-conditioning/commercial-one.png",
-      "/images/projects/al-jasim-air-conditioning/commercial-four.png",
-      "/images/projects/al-jasim-air-conditioning/commercial-five.png",
-    ],
-    description:
-      "Al Jasim Air Conditioning project reflects our commitment to delivering efficient and professional commercial spaces. Our team executed a functional fit-out with a clean layout, durable finishes, and well-organized work areas—creating an environment that supports smooth operations while maintaining a modern and professional appearance.",
-    year: "2024",
-    location: "Fujairah, UAE",
-  },
+ 
 
   {
     id: 10,
-    title: "Mosque",
+    title: "Kalba Mosque",
     category: "Commercial",
     image: "/images/projects/mosque/mosque-two.png",
     gallery: [
@@ -184,7 +169,7 @@ const projects = [
   },
   {
     id: 11,
-    title: "Villa",
+    title: "Villa Project",
     category: "Residential",
     image: "/images/projects/project/villa-one.png",
     gallery: [
